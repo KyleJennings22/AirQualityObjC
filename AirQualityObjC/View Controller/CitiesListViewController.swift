@@ -29,6 +29,7 @@ class CitiesListViewController: UIViewController, UITableViewDataSource, UITable
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                self.title = self.state
             }
         }
     }

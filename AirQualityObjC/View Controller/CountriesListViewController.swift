@@ -26,6 +26,7 @@ class CountriesListViewController: UIViewController, UITableViewDelegate, UITabl
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        self.title = "Countries"
         
         DVMCityAirQualityController.fetchSupportedCountries { (countries) in
             self.countries = countries

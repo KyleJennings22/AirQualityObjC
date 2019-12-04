@@ -39,6 +39,7 @@ class CityDetailViewController: UIViewController {
             self.tempLabel.text = "Temperature: \(airQuality.weather.temperature)"
             self.humidityLabel.text = "Humidity: \(airQuality.weather.humidity)"
             self.windspeedLabel.text = "Windspeed: \(airQuality.weather.windspeed)"
+            self.title = self.city
         }
     }
 
